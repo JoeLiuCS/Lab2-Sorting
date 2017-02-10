@@ -102,9 +102,9 @@ public class mergeSort {
 	 * Pass in Original Entry and four position from array;
 	 * 
 	 * Example:        Array[] = {    2     ,     7     ,     10     ,    1    ,    5    ,  ....... }
-	 *                                ^           ^           ^                     ^
-	 *                                |           |           |                     |
-	 *                            part1Start   part1End    part2Start            part2End
+	 *                                ^                        ^          ^         ^
+	 *                                |                        |          |         |
+	 *                            part1Start                part1End  part2Start  part2End
 	 * 
 	 * then do merge and sort
 	 * 
@@ -114,7 +114,8 @@ public class mergeSort {
 	 *     => 1st = {7,10}      2nd = {5}      Container = {1,2}
 	 *     => 1st = {7,10}      2nd = {}       Container = {1,2,5}
 	 *     => 1st = {}          2nd = {}       Container = {1,2,5,7,10}
-			 
+	 *     
+	 *    put those elements back to original Entry
 	 * @param Entry
 	 * @param part1Start
 	 * @param part1End
